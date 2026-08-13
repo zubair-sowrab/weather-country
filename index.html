@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Countries</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="nav-container">
+            <h2>Weather<span>Countries</span></h2>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#search">Explore</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="small-title">WEATHER CHECKER</p>
+                <h1>Explore Countries<br>and Their Weather</h1>
+                <p class="hero-text">
+                    Search for a country to discover details.
+                </p>
+                <a href="#search" class="hero-button">Find a Country</a>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-placeholder">
+                    <img src="image.png" id="heroImageElement">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="search-section" id="search">
+        <div class="section-title">
+            <p class="small-title">SEARCH DETAILS</p>
+            <h2>Find any country with weather data</h2>
+            <p>Enter a country name below to view information:</p>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="countryInput" placeholder="e.g. Bangladesh, Palestine, etc.">
+            <button id="searchButton">Search</button>
+        </div>
+
+        <p id="errorMessage"></p>
+
+        <div id="countryResult"></div>
+    </section>
+
+    <footer>
+        <p>Weather Data Countries 2026</p>
+        <span>Country-related Weather Information</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
